@@ -1,9 +1,19 @@
 <template>
   <div>
     <nuxt />
+     <no-ssr>
+      <cookieNotice />
+    </no-ssr>
   </div>
 </template>
-
+<script>
+export default {
+  name: 'LayoutDefault',
+  components: {
+    cookieNotice: () => import('~/components/cookieNotice')
+  },
+}
+</script>
 <style>
 html {
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',

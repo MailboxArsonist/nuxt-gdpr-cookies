@@ -1,4 +1,3 @@
-import config from '@/config.json'
 export default function ({ app }) {
 
     // svrgp holds cookie preferences
@@ -11,7 +10,6 @@ export default function ({ app }) {
         // otherwise remove fb related cookies
         app.$cookies.remove('_fbp', {
             path: '/',
-            domain: config.cookieDomain
         })
     }
 }

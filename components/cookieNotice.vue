@@ -79,7 +79,6 @@
 </template>
 
 <script>
-import config from '@/config.json'
 export default {
   name: "CookieNotice",
   props: {
@@ -180,7 +179,7 @@ export default {
     },
     handleFacebookPixel(){
       // handles activating or removing facebook pixel related prefs
-      if(this.cookiePreference['facebook-pixel'] === true && config.isProd) {
+      if(this.cookiePreference['facebook-pixel'] === true) {
         this.$fb.enable()
       } else {
         // User may have removed fb pixel so remove any related cookies
@@ -203,7 +202,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
 .cookie {
   position: fixed;
   z-index: 20;

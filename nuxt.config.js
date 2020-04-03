@@ -40,7 +40,7 @@ modules: [
   ['nuxt-facebook-pixel-module', {
     /* module options */
     track: 'PageView',
-    pixelId: 'PLACE ID HERE',
+    pixelId: '236050774249418',
     disabled: true
   }
 ],

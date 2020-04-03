@@ -4,7 +4,7 @@ export default async (ctx, inject) => {
 
   Vue.use(VueAnalytics, {
     router: ctx.app.router,
-    id: 'PUT GOOGLE ANALYTICS ID',
+    id: 'UA-160309162-2',
     debug: {
       trace: true,
       sendHitTask: true

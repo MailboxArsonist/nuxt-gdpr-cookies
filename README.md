@@ -1,6 +1,6 @@
-# cookies
+# Nuxt Cookie notice
 
-> How to install a GDPR compliant cookie bar
+> How to install a GDPR compliant cookie bar with google analytics and facebook pixel.
 
 ## Build Setup
 

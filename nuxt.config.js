@@ -27,17 +27,28 @@ export default {
   /*
   ** Plugins to load before mounting the App
   */
-  plugins: [
-  ],
+ plugins: [
+  { src: '~/plugins/facebookPixel', mode: 'client' },
+  { src: '~/plugins/googleAnalytics', mode: 'client' }
+],
+
+/*
+** Nuxt.js modules
+*/
+modules: [ 
+  'cookie-universal-nuxt',
+  ['nuxt-facebook-pixel-module', {
+    /* module options */
+    track: 'PageView',
+    pixelId: 'PLACE ID HERE',
+    disabled: true
+  }
+],
+],
   /*
   ** Nuxt.js dev-modules
   */
   buildModules: [
-  ],
-  /*
-  ** Nuxt.js modules
-  */
-  modules: [
   ],
   /*
   ** Build configuration
